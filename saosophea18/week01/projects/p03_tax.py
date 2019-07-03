@@ -19,15 +19,15 @@ while True:
 AMOUNT_INTER = int(AMOUNT_INTER)
 RATE = int(RATE)
 print("===== ===== ===== ===== =====")
-print("AMOUNT: " + str(AMOUNT_INTER))
+print("AMOUNT: " + str(AMOUNT_INTER) + "$")
 print("RATE: " + str(RATE) + "%")
 print("===== ===== ===== ===== =====")
 TAX_AMOUNT = float((RATE/100)*AMOUNT_INTER)
 NET = float(AMOUNT_INTER - TAX_AMOUNT)
 
-'{:.2f}'.format(TAX_AMOUNT)
-'{:.2f}'.format(NET)
 
-print("TAX: ",TAX_AMOUNT)
-print("NET: " + str(NET))
+
+
+print("TAX: ",'{:.2f}'.format(TAX_AMOUNT),"$")
+print("NET: ",'{:.2f}'.format(NET),"$")
 print("===== ===== ===== ===== =====")
